@@ -1,0 +1,82 @@
+.careers{
+    margin-top: 170px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.career-area{
+    width: 80%;
+}
+.carrer-acc{
+    width: 80%;
+    margin-top:5rem;
+}
+.accTitle.career{
+    background: #fff;
+    border-top: 1px solid #c2c1c1;
+}
+.accTitle.career:first-child{
+    border-top: none;
+}
+.apply-area{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    width: 100%;
+}
+.apply-area button{
+    padding: 10px 40px ;
+    background: #000;
+    color: #fff;
+    margin-right: 30px;
+}
+ .accItem.career{
+     height: 350px;
+     transition: height 0.3s ease-in-out;
+ } 
+ .accItem.career p{
+     color: #808080;
+     line-height:2;
+     padding: 30px 0px;
+ }
+ .resume-input{
+     width: 100%;
+     padding: 12px 10px;
+     border: 1px solid #c2bfbf;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .resume-input input{
+     display: none;
+ }
+ .resume-input label{
+     background: #000;
+     color: #fff;
+     padding: 5px 10px;
+     font-size: 14px;
+ }
+ .resume{
+     position: absolute;
+     top: -10px;
+     left: 10px;
+     background: #fff;
+     padding: 0 3px;
+     color: #afafaf;
+ }
+ @media(max-width:505px){
+    .carrer-acc{
+        width: 100%;
+    }
+    .career-area{
+        width: 100%;
+        padding: 0 20px;
+    }
+ }
+ @media(max-width:396px){
+    .careers{
+        margin-top: 100px;
+    }
+ }

@@ -1,0 +1,35 @@
+.footer{
+    margin-top: 11rem;
+}
+.footer-icons-2{
+    display: none;
+}
+@media(max-width:1215px){
+    footer{
+        padding:20px !important;
+        width: 100% !important;
+    }
+}
+@media(max-width:685px){
+    footer{
+        flex-direction: column;
+    }
+    footer img{
+        width:154px;
+        height: 56px;
+    }
+    .footer-icons{
+        display: none;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .footer-icons-2{
+        display:flex;
+        align-items: center;
+        justify-content:flex-start;
+    }
+    .foote-icon{
+        font-size: 32px;
+        margin-right:20px ;
+    }
+}

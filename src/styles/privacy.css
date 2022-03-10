@@ -1,0 +1,55 @@
+.privacy-page{
+    width: 100%;
+    height: 100%;
+    margin-top: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-area{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.privacy-header{
+    width: 100%;
+    display: flex;
+}
+.nav-header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-evenly;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #000;
+}
+.nav-header h1{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #CECECE;
+}
+.nav-header h1.active{
+    color: #000;
+    height:30px;
+}
+.content-area{
+    display: flex;
+    flex-direction: column;
+}
+.text-area{
+    padding-top: 2rem;
+    color: #808080;
+}
+.text-area p{
+    font-size: 16px;
+    line-height: 2;
+}
+@media(max-width:360px){
+    .nav-header{
+        align-items: flex-start;
+    }
+    .nav-header h1{
+        font-size: 1rem;
+    }
+}

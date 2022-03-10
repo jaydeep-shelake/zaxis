@@ -1,0 +1,193 @@
+.dresses-sec{
+    width: 100%;
+    height: calc(100vh - 300px);
+    margin-top: 154px;
+}
+.dress-banner{
+    width: 100%;
+    height: 372px;
+    background: #F3F3F3;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dress-banner h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.dress-cards-sec{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+.dress-view{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.dress-filters{
+    display: flex;
+    cursor: pointer;
+}
+.dress-filters p :first-child{
+    margin-right: 10px;
+}
+.dress-cards{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    position: relative;
+}
+.dress-card{
+    height: 437px;
+    width: 261px;
+    transition: all 0.3s ease-in-out;
+}
+.dress-img{
+    height: 80%;
+    width: 100%;
+    position: relative;
+    background: #F3F3F3;
+}
+.dress-img img{
+    width: 100%;
+    height: 100%;
+}
+.on-sale{
+    position: absolute;
+    top: 10px;
+    right:10px;
+    background: #fff;
+    padding: 2px 4px;
+}
+.dress-des{
+    width: 100%;
+    height: 20%;
+    background: #fff;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.text h3{
+    font-size: 0.8rem;
+}
+.text p{
+    font-size: 12px;
+    padding-top: 5px;
+}
+.price{
+    display: flex;
+}
+.price p:first-child{
+    margin-right: 5px;
+}
+.price p:last-child{
+    color: gray;
+    text-decoration: line-through;
+}
+.sort,.fliter{
+    position: absolute;
+    width: 183px;
+    text-align: end;
+    top: 0;
+    right: 21px;
+    padding: 0 20px;
+    background: #fff;
+    box-shadow: 3px 3px 6px rgba(39, 39, 39, 0.123);
+}
+.sort p,.fliter p{
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.fliter{
+    right: 60px;
+}
+.sort-btn , .filter-btn{
+    transition: all 0.3s ease;
+}
+.rotate{
+    transform: rotate(-180deg);
+    transition: all 0.3s ease;
+}
+.dress-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 24px;
+    
+}
+.view-icon{
+    font-size: 22px;
+    color: #F3F3F3;
+    cursor: pointer;
+}
+.view-icon.active{
+    color: #000;
+}
+.dress-icons .view-icon.large{
+    font-size: 24px;
+}
+.dress-card.width-full{
+    width: 461px;
+    height: 637px;
+    transition: all 0.3s ease-in-out;
+}
+@media(max-width:985px){
+    .dress-card{
+        height: 337px;
+    width: 210px;
+    }
+}
+@media(max-width:895px){
+    .dress-cards{
+        justify-content:flex-start;
+    }
+    .dress-card{
+        margin: 0 10px;
+    }
+}
+@media(max-width:500px){
+    .dress-cards{
+        width: 95%;
+        justify-content:space-evenly;
+    }
+    .dresses-sec{
+        margin-top: 60px;
+    }
+    .dress-card{
+        height: 355px !important;
+    }
+    .dress-icons{
+        display: none;
+    }
+}
+@media(max-width:410px){
+    .dress-card{
+        width:173px;
+        height:306px !important;
+        margin-bottom:40px;
+    }
+}
+@media(max-width:365px){
+    .dress-card{
+        width: 148px !important;
+        height: 272px !important;
+    }
+}

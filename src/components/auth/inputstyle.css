@@ -1,0 +1,9 @@
+.MuiFormLabel-root{
+  font-size: 14px;
+}
+.otp-input{
+  border-radius: 3px;
+}
+.otp-input .PrivateNotchedOutline-root-1{
+  border-width: 0px !important;
+}

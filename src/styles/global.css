@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footer-items p{
+margin: 6px 0;
+}
+.loding-bar{
+    width: 80px;
+    height: 2px;
+    position: relative;
+    background:#cfcfcf;
+}
+.loding-bar::before{
+    content:"";
+    width: 30px;
+    height: 2px;
+    background:black;
+    position: absolute;
+    left:0px;
+    animation: blackbar 1.5s infinite ease;
+}
+
+.upper-case a{
+    text-transform: uppercase;
+}
+
+@keyframes blackbar {
+    50%{
+        left:52px;
+    }
+}
+.cart-icon{
+    position: relative;
+}
+.cart-icon span{
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    background: #000;
+    color: #fff;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    transition: opacity 0.3s ease;
+}
+.dorp-down{
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    padding: 10px 30px;
+    background:#fff;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: opacity 0.3s ease;
+}
+.first-list.notification .dorp-down{
+    box-shadow: 0px 3px 6px #00000029;
+ width: 283px;
+ height: auto;
+ background: #fff;
+ bottom:-90px;
+ margin-left: -190px;
+ z-index:99;
+}
+.first-list:hover{
+    border-bottom: 1px solid #000;
+}
+.first-list.notification:hover{
+    border: none;
+}
+.first-list:hover .dorp-down{
+opacity: 1;
+visibility: visible;
+transition: opacity 0.3s ease;
+}
+.noti{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E6E6E6;
+}
+.noti-text{
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    flex-direction: column;
+    width: 223px;
+height: 60px;
+}
+.noti-icon{
+    padding: 5px;
+    background:#E6E6E6;
+    border-radius: 50%;
+}
+.images-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.images-row img{
+    margin: 0 10px;
+}
+@media(max-width:1070px){
+    .images-row{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
