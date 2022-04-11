@@ -1,9 +1,7 @@
 .wish-list{
     width: 65%;
-    padding-right: 10rem;
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
     justify-content:space-evenly;
     flex-wrap: wrap;
     margin-top: 60px;

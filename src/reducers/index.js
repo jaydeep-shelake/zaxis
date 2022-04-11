@@ -4,7 +4,7 @@ import notificationReducer from './notifactionReducer';
 import mobReducer from './mobReducer'
 import otpReducer from './otpReducer';
 import addressReducer from './addressReducer'
-import wishListReducer from './wishListReducer';
+import wishListReducer,{getWishlistReducer} from './wishListReducer';
 import checkout from './checkoutReducer'
 import reviewReducer from './review'
 import cartReducer from './cartReducer';
@@ -23,5 +23,6 @@ export default combineReducers({
     orders:orderReducer,
     checkout:checkout,
     showcart:showCartReducer,
-    cartTotal:totalPriceReducer
+    cartTotal:totalPriceReducer,
+    getWishlist:getWishlistReducer
 })
