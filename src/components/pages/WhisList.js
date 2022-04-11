@@ -1,25 +1,11 @@
 import React from 'react'
 import ProfileNavigation from '../profile/ProfileNavigation'
 import Header from '../Header'
-import {connect} from 'react-redux'
+import {connect, useDispatch, useSelector} from 'react-redux'
 import DressCard from '../cards/DressCard';
 import '../../styles/wishlist.css';
-import{db}from '../../firebase'
-import { useEffect } from 'react';
-import { useState } from 'react';
 const WhisList = (props) => {
-  const [product,setProduct]=useState([])
-    useEffect(()=>{
-        db.wishlist.where('userId','==',props?.userId)
-        .get()
-        .then((sanpShot)=>{
-            console.log(sanpShot.docs.map(db.formatedDoc))
-            setProduct(sanpShot.docs.map(db.formatedDoc))
-        })
-        .catch((err)=>{
-            console.log(err);
-        })
-    },[props.userId])
+  const product = useSelector(state=>state.getWishlist)
     return (
         <>
         <Header/>
