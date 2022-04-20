@@ -10,6 +10,7 @@ import {FaRegHeart} from 'react-icons/fa'
 import {connect} from 'react-redux'
 import logo from '../assets/img/ana-logo.png'
 import '../styles/main.css'
+import HeaderList from './HeaderList'
 // import {AiOutlineUser} from 'react-icons/ai'
 const Header = (props) => {
     const [showSideBar,setShowSideBar]=useState(false)
@@ -41,7 +42,13 @@ const Header = (props) => {
                         <Link to="/notification">  <AiOutlineBell className="bell-icon"/></Link>
                     </div>
                     <Link><li className=" text-2xl font-bold">Women</li></Link>
-                    <Link to="/collections"><li className="text-2xl font-bold">Men</li></Link>
+                    <Link to="/collections">
+                        <li className="text-2xl font-bold">
+                        Men
+                        <HeaderList/>
+                        </li>
+        
+                        </Link>
                     <Link to="/dresses"><li className="text-2xl font-bold">Trending</li></Link>
                     <Link to="/collab"><li className="text-2xl font-bold">Sales of Day</li></Link>
 
